@@ -1,0 +1,14 @@
+Installation for UNIX like systems:
+
+1. Install Poly/ML 5.5 (http://www.polyml.org/download.html).
+
+2. Edit the Makfile: change the LIBPATH variable so that it points to your
+   Poly/ML libraries and select the appropriate POLYLIB line for your platform.
+   Then do
+
+  $ make
+
+3. Make sure the bin/l3 shell script has execute permission. And move the
+   files in bin/ to your preferred location.
+
+4. To start L3, type l3.

@@ -1,0 +1,10 @@
+#!/bin/bash
+# The l3hol script (with quote preprocessing)
+
+L3DIR=$(dirname $0)
+
+if [[ $1 == "--lib-path" ]]; then
+   echo $(cd $L3DIR; pwd)/../lib
+else
+   $L3DIR/unquote | $L3DIR/l3hol.run -i -q $@ --use $L3DIR/pd.sml
+fi
